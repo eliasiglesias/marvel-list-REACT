@@ -35,10 +35,21 @@ const PersonageDetail = () => {
 							{personage.id}
 						</h5>
 					</Col>
+					{personage.description && (
+						<Col xs="7" className="d-flex flex-column justify-content-center">
+							<h6>
+								<u>Descripción</u>
+							</h6>
+							<p className="text-secondary">{personage.description}</p>
+						</Col>
+					)}
+
 					<Col xs="10" className="d-flex justify-content-center">
 						<img
 							src={`${personage.thumbnail.path}.${personage.thumbnail.extension}`}
 							alt=""
+							width="500px"
+							height="500px"
 						/>
 					</Col>
 				</>

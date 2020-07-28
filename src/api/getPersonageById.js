@@ -1,6 +1,6 @@
 const URL = "https://gateway.marvel.com:443/v1/public/characters/";
 
-const KEY = "?apikey=cf666fece5c38969dc259ab90e870c87";
+const KEY = "?apikey=5e23eb651237f603c408db091b2abe34";
 
 const getPersonageById = async (id) => {
 	const response = await fetch(URL + id + KEY);
